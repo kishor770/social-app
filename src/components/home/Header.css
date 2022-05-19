@@ -20,3 +20,12 @@ p{
     position: absolute;
     right: 30px;
 }
+.si{
+    
+    padding: 80px;
+    background-color:rgb(189, 184, 184);
+    border: solid;
+    width: 300px;
+    margin-left: 400px;
+    text-align: center;
+}
