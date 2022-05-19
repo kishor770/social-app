@@ -4,6 +4,8 @@ import Signup from './components/Signup';
 import Home from './components/Home.js';
 import MyProfile from './components/MyProfile';
 import EditProfile from './components/EditProfile';
+import Posts from './components/Posts'
+
 function App() {
   return (
     <BrowserRouter>
@@ -13,6 +15,7 @@ function App() {
         <Route path='/login' element={<Login/>} />
         <Route path="/myProfile" element={<MyProfile />} />
         <Route path="/editProfile" element={<EditProfile />} />
+        <Route path="/posts" element={<Posts />} />
       </Routes>
     </BrowserRouter>
   );
