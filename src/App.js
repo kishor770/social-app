@@ -5,12 +5,13 @@ import Home from './components/Home.js';
 import MyProfile from './components/MyProfile';
 import EditProfile from './components/EditProfile';
 import Posts from './components/Posts'
+import Header from './components/home/Header';
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route exact path='/' element={<Home />} />
+        <Route exact path='/' element={<Header islog={"false"}/>} />
         <Route path='/signup' element={<Signup/>} />
         <Route path='/login' element={<Login/>} />
         <Route path="/myProfile" element={<MyProfile />} />

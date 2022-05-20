@@ -20,6 +20,7 @@
     import Box from "@mui/material/Box";
     import TextField from "@mui/material/TextField";
     import Headersign from './Headersign';
+    import './home/Header.css';
     
     const ExpandMore = styled((props) => {
       const { expand, ...other } = props;
@@ -42,7 +43,8 @@
       return (
         <div>
             <Headersign/>
-        <Card sx={{ maxWidth: 345 }}>
+          
+        <Card sx={{ maxWidth: 345 }} className="ca">
             
           <h1>My Profile</h1>
           <CardHeader
