@@ -13,14 +13,18 @@ p{
 }
 .hi{
     position: absolute;
-    right: 200px;
+    right: 220px;
     
 }
 .hia{
     position: absolute;
-    right: 120px;
+    right: 160px;
 }
 .hias{
+    position: absolute;
+    right: 110px;
+}
+.hiast{
     position: absolute;
     right: 30px;
 }
