@@ -9,7 +9,7 @@ import './Header.css';
             <p className="hi"><Link to='/login'>Login</Link></p>
             <p className="hia"><Link to='/signup'>Signup</Link></p>
             <p className="hias"><Link to='/posts'>Posts</Link></p>
-            <p className="hiast"><Link to='/myProfile'>MyProfile</Link></p>
+            <p className="hiast"><Link to='/MyProfile'>MyProfile</Link></p>
         </div>
         )
     }

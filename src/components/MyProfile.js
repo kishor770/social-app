@@ -1,5 +1,5 @@
 
-    import * as React from "react";
+import React from 'react';
     import { styled } from "@mui/material/styles";
     import Card from "@mui/material/Card";
     import CardHeader from "@mui/material/CardHeader";
@@ -71,7 +71,7 @@
             <h2>Kishore</h2>
             <h5>kishore@gmail.com</h5>
             <Typography variant="body2" color="text.secondary">
-              <Button variant="contained">Edit Profile</Button>
+              <Button variant="contained" onClick={()=>window.open("./Edit","_self")}>Edit Profile</Button>
             </Typography>
           </CardContent>
           <CardActions disableSpacing>

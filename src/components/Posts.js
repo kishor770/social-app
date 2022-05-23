@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React,{useState} from 'react';
 import Avatar from '@mui/material/Avatar';
 import Stack from '@mui/material/Stack';
 import Headersign from './Headersign';
@@ -6,9 +6,11 @@ import Box from '@mui/material/Box';
 import ShareIcon from '@mui/icons-material/Share';
 import './home/Header.css';
 import FavoriteIcon from '@mui/icons-material/Favorite';
+import IconButton from '@mui/material/IconButton';
 import TextField from '@mui/material/TextField';
 
 export default function Posts(){
+    const[value,setValue] =useState(0);
     return(
         <div>
             <Headersign/>
@@ -19,8 +21,12 @@ export default function Posts(){
             <h5>.2d</h5><br/>
             <img src='https://images.unsplash.com/photo-1652909445392-0ac2b1463489?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872'></img>
             <br/>
-            <FavoriteIcon fontSize="inherit" />
-            <ShareIcon fontSize="inherit" />
+            <IconButton aria-label="add to favorites" onClick={()=>setValue(value+1)}>
+          <FavoriteIcon /><h6>{value}</h6>
+        </IconButton>
+        <IconButton aria-label="share">
+          <ShareIcon />
+        </IconButton>
             <TextField id="outlined-basic" label="comment" variant="outlined" />
         </div>
     )
